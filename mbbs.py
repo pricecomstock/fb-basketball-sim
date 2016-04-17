@@ -29,7 +29,9 @@ while attempts > 0 :
 			print "You have made " + str(made) + " shot(s)!"
 		else:
 			print "You missed a shot after making " + str(made) + " shots!"
+			scores.append(made)
 			made=0
 			madePrev=False
 		time.sleep(1)
+		
 scoreReport()
