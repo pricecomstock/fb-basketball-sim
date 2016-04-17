@@ -32,3 +32,4 @@ while attempts > 0 :
 			made=0
 			madePrev=False
 		time.sleep(1)
+scoreReport()
