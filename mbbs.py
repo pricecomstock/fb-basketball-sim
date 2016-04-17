@@ -13,10 +13,14 @@ def scoreReport():
 	for x in range(max(scores)):
 		print str(x) + " scored " + str(scores.count(x)) + " times!"
 	print ""
+	print "Attempts: " + str(len(scores))
 	print "High score: " + str(max(scores))
 	print "Average score: " + str(sum(scores)/float(len(scores)))
 
-while True:
+attempts = input("Please enter number of attempts: ")
+
+while attempts > 0 :
+	attempts -= 1
 	madePrev=True
 	made=0
 	while(madePrev):
